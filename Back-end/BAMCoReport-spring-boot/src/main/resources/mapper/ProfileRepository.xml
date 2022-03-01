@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.repository.ProfileRepository">
+    <resultMap id="BaseResultMap" type="com.example.demo.entities.Profile">
+        <!--@JPA.Support generated on 2022-02-06 13:48:42.-->
+        <!--@Table profile-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="creation_date" jdbcType="DATE" property="creationDate"/>
+        <result column="last_update" jdbcType="DATE" property="lastUpdate"/>
+        <result column="description" jdbcType="VARCHAR" property="description"/>
+        <result column="is_default" jdbcType="BIT" property="defaultField"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="created_by" jdbcType="BIGINT" property="createdBy"/>
+        <result column="last_updated_by" jdbcType="BIGINT" property="lastUpdatedBy"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2022-02-06 13:48:42.-->
+        id, creation_date, last_update, description, is_default, `name`, created_by, last_updated_by
+    </sql>
+</mapper>

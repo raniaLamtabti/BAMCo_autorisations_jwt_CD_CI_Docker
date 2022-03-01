@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.repository.TestRepository">
+    <resultMap id="BaseResultMap" type="com.example.demo.entities.Test">
+        <!--@JPA.Support generated on 2022-02-06 13:48:43.-->
+        <!--@Table test-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2022-02-06 13:48:43.-->
+        id, `name`
+    </sql>
+</mapper>

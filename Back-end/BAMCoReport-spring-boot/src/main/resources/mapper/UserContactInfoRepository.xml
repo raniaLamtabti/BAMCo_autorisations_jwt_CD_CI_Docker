@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.repository.UserContactInfoRepository">
+    <resultMap id="BaseResultMap" type="com.example.demo.entities.UserContactInfo">
+        <!--@JPA.Support generated on 2022-02-06 13:48:43.-->
+        <!--@Table user_contact_info-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="creation_date" jdbcType="DATE" property="creationDate"/>
+        <result column="last_update" jdbcType="DATE" property="lastUpdate"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="building" jdbcType="VARCHAR" property="building"/>
+        <result column="city" jdbcType="VARCHAR" property="city"/>
+        <result column="country" jdbcType="VARCHAR" property="country"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="fax" jdbcType="VARCHAR" property="fax"/>
+        <result column="mobile" jdbcType="VARCHAR" property="mobile"/>
+        <result column="personal" jdbcType="BIT" property="personal"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="room" jdbcType="VARCHAR" property="room"/>
+        <result column="state" jdbcType="VARCHAR" property="state"/>
+        <result column="website" jdbcType="VARCHAR" property="website"/>
+        <result column="zipcode" jdbcType="VARCHAR" property="zipcode"/>
+        <result column="user_id" jdbcType="BIGINT" property="userId"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2022-02-06 13:48:43.-->
+        id, creation_date, last_update, address, building, city, country, email, fax, mobile, personal, phone, room,
+        `state`, website, zipcode, user_id
+    </sql>
+</mapper>

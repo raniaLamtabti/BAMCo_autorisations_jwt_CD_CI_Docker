@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.repository.UserMembershipRepository">
+    <resultMap id="BaseResultMap" type="com.example.demo.entities.UserMembership">
+        <!--@JPA.Support generated on 2022-02-06 13:48:44.-->
+        <!--@Table user_membership-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="creation_date" jdbcType="DATE" property="creationDate"/>
+        <result column="last_update" jdbcType="DATE" property="lastUpdate"/>
+        <result column="assigned_date" jdbcType="DATE" property="assignedDate"/>
+        <result column="assigned_by" jdbcType="BIGINT" property="assignedBy"/>
+        <result column="group_id" jdbcType="BIGINT" property="groupId"/>
+        <result column="role_id" jdbcType="BIGINT" property="roleId"/>
+        <result column="user_id" jdbcType="BIGINT" property="userId"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2022-02-06 13:48:44.-->
+        id, creation_date, last_update, assigned_date, assigned_by, group_id, role_id, user_id
+    </sql>
+</mapper>
