@@ -1,1 +1,0 @@
-# BAMCo_autorisations_jwt_CD_CI_Docker
