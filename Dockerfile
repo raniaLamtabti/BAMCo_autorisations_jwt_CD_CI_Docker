@@ -1,4 +1,4 @@
 FROM openjdk:11
 EXPOSE 8080
-ADD target/demo88.jar demo88.jar
-ENTRYPOINT ["java","-jar","/demo88.jar"]
+ADD target/bam_co.jar bam_co.jar
+ENTRYPOINT ["java","-jar","/bam_co.jar"]
