@@ -180,6 +180,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>bam_co</finalName>
     </build>
 
 </project>
