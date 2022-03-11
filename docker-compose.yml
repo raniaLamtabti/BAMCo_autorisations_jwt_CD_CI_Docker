@@ -1,0 +1,34 @@
+version: "3.8"
+services:
+  ### Postgres Database ###
+  postgres:
+    container_name: postgres_db
+    image: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: bamcoreport
+  ### API Spring Boot ###
+  api:
+    container_name: bam_co
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    expose:
+      - "8080"
+    restart: on-failure
+    depends_on:
+      - postgres
+    environment:
+      HOST_NAME: postgres
+      PORT_NUM: 5432
+      DATABASE_NAME: bamcoreport
+      PS_USERNAME: postgres
+      PS_PW: 1234
+
+volumes:
+  pgdata: {}
